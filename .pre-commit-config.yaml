@@ -1,7 +1,7 @@
 repos:
   # lint yaml, line and whitespace
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: cef0300fd0fc4d2a87a85fa2093c6b283ea36f4b  # frozen: v5.0.0
+    rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c  # frozen: v6.0.0
     hooks:
       - id: check-yaml
       - id: end-of-file-fixer
@@ -13,7 +13,7 @@ repos:
 
   # lint the dockerfiles
   - repo: https://github.com/hadolint/hadolint
-    rev: c3dc18df7a501f02a560a2cc7ba3c69a85ca01d3  # frozen: v2.13.1-beta
+    rev: 2eece55955ced00200be9729e9728cb7dacca505  # frozen: v2.15.1
     hooks:
       - id: hadolint
 
@@ -28,7 +28,7 @@ repos:
         exclude: ^(Dockerfile*)
 
   - repo: https://github.com/codespell-project/codespell.git
-    rev: "63c8f8312b7559622c0d82815639671ae42132ac"  # frozen: v2.4.1
+    rev: "57b21406f092110c18776e39b0bda50d37c945c8"  # frozen: v2.4.3
     hooks:
       - id: codespell
         types: [text]
@@ -36,12 +36,12 @@ repos:
         exclude: ^(Dockerfile*)
 
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: a23f6b85d0fdd5bb9d564e2579e678033debbdff  # frozen: v0.10.0.1
+    rev: a6564f5d57444e123433a5c9af733e3975c77229  # frozen: v0.11.0.1-1
     hooks:
       - id: shellcheck
 
   - repo: https://github.com/sirosen/check-jsonschema
-    rev: 06e4cc849d03f3a59ca223a4046f4bb5bb2aba6d  # frozen: 0.33.0
+    rev: c4654a7e007c9619a5eb63c39a456572a0fa1851  # frozen: 0.38.0
     hooks:
       - id: check-github-actions
       - id: check-github-workflows
@@ -54,12 +54,12 @@ repos:
 
     # lint python formatting
   - repo: https://github.com/psf/black
-    rev: 8a737e727ac5ab2f1d4cf5876720ed276dc8dc4b  # frozen: 25.1.0
+    rev: 87928e6d6761a4a6d22250e1fee5601b3998086e  # frozen: 26.5.1
     hooks:
       - id: black
 
   - repo: https://github.com/pycqa/flake8
-    rev: "4b5e89b4b108a6c1a000c591d334a99a80d34c7b"  # frozen: 7.2.0
+    rev: "d93590f5be797aabb60e3b09f2f52dddb02f349f"  # frozen: 7.3.0
     hooks:
       - id: flake8
         args: ["--extend-ignore=W503,W504,E501"]
